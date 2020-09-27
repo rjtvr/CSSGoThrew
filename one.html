@@ -1,9 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>One </title>
+
 </head>
 <body>
+	<h3>The font-family property:</h3>
+	<p>The font-family property specifies the font for an element. There are two types of font family names:</p>
+	<ul>
+		<li>font family: a specific font family (like Times New Roman or Arial)</li>
+		<li>generic family: a group of font families with a similar look (like Serif or Monospace)</li>
+	</ul>
 
+	<p><b>CSS </b></p>
+	<ul>
+		<li>p.serif {font-family: "Times New Roman", Times, serif;}</li>
+		<li><b>p.sansserif {font-family: Helvetica, Arial, sans-serif;}</b></li>
+		<li>p.monospace {font-family: "Courier New", Courier, monospace;}</li>
+		<li><b>p.cursive {font-family: Florence, cursive;}</b></li>
+		<li>p.fantasy {font-family: Blippo, fantasy;}</li>
+	</ul>
+
+	<h3>The font-family Property</h3>
+	<p>The font-family property should hold several font names as a "fallback" system. When specifying a web font in a CSS style, add more than one font name, in order to avoid unexpected behaviors. If the client computer for some reason doesn't have the one you choose, it will try the next one.<br>
+	It is a good practice to specify a generic font family, to let the browser pick a similar font in the generic family, if no other fonts are available. </p>
+
+	<p><b>Example: </b>body {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}</p>
+
+	<p>If the browser does not support the font Arial, it tries the next fonts (Helvetica Neue, then Helvetica). If the browser doesn't have any of them, it will try the generic sans-serif. </p>
+
+	
 </body>
 </html>
