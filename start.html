@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS</title>
+
+</head>
+<body>
+	<h3>Welcome to CSS:</h3>
+	<p>CSS stands for Cascading Style Sheets.</p>
+	<ul>
+		<li>Cascading refers to way CSS applies one style on top of another</li>
+		<li>Style Sheet control the look and feel of web documents</li>
+	</ul>
+
+	<p>CSS and HTML work hand in hand</p>
+	<ul>
+		<li>HTML sorts out the page structure.</li>
+		<li>CSS defines how HTML elements are displayed.</li>
+	</ul>
+
+	<p>Use of CSS</p>
+	<ul>
+		<li>CSS allows you to apply specific styles to specific HTML elements</li>
+		<li>CSS allows you to sperate style from content</li>
+		<li>All the styles and formatting are in the same place, which becomes rather difficult to maintain as the page grows.</li>
+	</ul>
+
+	<h3>CSS declaration types are:</h3>
+	<ol>
+		<li>Inline CSS</li>
+		<li>Embedded CSS</li>
+		<li>External CSS</li>
+	</ol>
+
+	<p><b>Inline CSS</b></p>
+	<ul>
+		<li>It is one of the way by which you can insert stylesheet, by this a unique style is applied to a single element.</li>
+		<li>Use inline style byt adding style attribute to the relevant tag</li>
+		<li>Example :</li>
+		<p>&ltp style="color:white; background-color:gray;"&gt
+    		<br>This is an example of inline styling.&ltp&gt 
+		</p>
+	</ul>
+	<br>
+	<p><b>Embedded CSS</b></p>
+	<ul>
+		<li>Internal styles are defined within the &ltstyle&gt element, inside the <b>head</b> section of an HTML page</li>
+		<li>An internal style sheet may be used if one single page has a unique style.</li>
+		<li><b>Example:</b><br>
+			&lthtml&gt<br>
+			&lthead&gt<br>
+			    &ltstyle&gt<br>
+			    p {<br>
+			        color: white;<br>
+			        background-color: gray;<br>
+			    }<br>
+			    &lt/style&gt<br>
+			&lt/head&gt<br>	
+			&ltbody&gt<br>
+			    &ltp&gtThis is my first paragraph. &lt/p&gt<br>
+			    &ltp&gtThis is my second paragraph. &lt/p&gt<br>
+			&lt/body&gt<br>
+			&lt/html&gt
+		</li>
+	</ul>
+	<br>
+	<p><b>External CSS</b></p>
+	<ul>
+		<li>In eternal css, all styling rules are contained in a single text file, which is saved with the .css extension. </li>
+		<li> CSS file is then referenced in the HTML using the <link> tag. The <link> element goes inside the head section</li>
+		<li>Example: &ltlink rel="stylesheet" href="example.css"&gt</li>
+		<li>If .css file is in same directory as the HTML file, else absolute path will be define the <b>href</b> for the CSS file, above example is of relative</li>
+	</ul>
+
+
+	<h3>CSS syantax</h3>
+	<p>CSS is composed of style rules that the browser interprets and then applies to the corresponding elements in your document. A style rule has three parts: selector, property, and value. </p>
+	<table style="text-align: center;" border="1">
+		<tr>
+			<td>h1</td>
+			<td>{ color :</td>
+			<td>orange }</td>
+		</tr>
+		<tr>
+			<td>Selector</td>
+			<td>Property</td>
+			<td>Value</td>
+		</tr>
+	</table>
+
+	<h3>Type Selectors</h3>
+	<p>The most common and easy to understand selectors are type selectors. This selector targets element types on the page. A CSS declaration always ends with a semicolon, and declaration groups are surrounded by curly braces.</p>
+
+	<h3>Id and class selector</h3>
+	<p>id selectors allow you to style an HTML element that has an id attribute, regardless of their position in the document tree. Here is an example of an id selector</p>
+	<ul>
+		<li>To select an element with a specific id, use a hash character, and then follow it with the id of the element.</li>
+		<li>To select an element with a specific class, use a dot character, and then follow it with the class of the element</li>
+		<li>Do NOT start a class or id name with a number!</li>
+	</ul>
+
+	<h3>Descendant Selectors</h3>
+	<p>These selectors are used to select elements that are descendants of another element. When selecting levels, you can select as many levels deep as you need to. </p>
+
+	<ul>
+		<li><b>The HTML: </b><br>
+			&ltdiv id="intro"&gt<br>
+			    &ltp class="first"&gtThis is a &ltem&gt<br> paragraph.&lt/em&gt<br>
+			    &lt/p&gt<br>
+			    &ltp&gt This is the second paragraph. &lt/p&gt<br>
+			&lt/div&gt<br>
+			&ltp class="first"&gt This is not in the intro<br> section.&lt/p&gt<br>
+			&ltp&gt The second paragraph is not in the intro<br> section. &lt/p&gt
+		</li><br>
+		<li><b>The CSS:</b><br> 
+			#intro .first em {<br>
+			color: pink;<br>
+			background-color:gray;<br>
+			}
+		</li><br>
+		<li>The descendant selector matches all elements that are descendants of a specified element.</li>
+	</ul>
+
+	<h3>Comments: </h3>
+	<ul>
+		<li>Commenting in CSS: /* comment goes here */ </li>
+	</ul>
+
+	<h3>Cascade</h3>
+	<p>The final appearance of a web page is a result of different styling rules. </p>
+	<p>The three main sources of style information that form a cascade are:</p>
+	<ul>
+		<li>The stylesheet created by the author of the page</li>
+		<li>The browser's default styles</li>
+		<li>Styles specified by the user</li>
+	</ul>
+
+	<h3>Inheritance</h3>
+	<p>Inheritance refers to the way properties flow through the page. A child element will usually take on the characteristics of the parent element unless otherwise defined. Properties define to body that will be inheritited by its child like p, a, span etc like if we define text color to body that will inherited by its following child tags</p>
+
+	
+</body>
+</html>
