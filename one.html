@@ -29,6 +29,143 @@
 
 	<p>If the browser does not support the font Arial, it tries the next fonts (Helvetica Neue, then Helvetica). If the browser doesn't have any of them, it will try the generic sans-serif. </p>
 
+	<h3>Font-size Property</h3>
+	<p>The font-size property sets the size of a font. One way to set the size of fonts on the web is to use keywords. For example xx-small, small, medium, large, larger, etc. </p>
 	
+	<p><b>CSS</b></p>
+	<ul>
+	    <li>p.small {
+	        font-size: small;
+	        }
+	    </li>
+	    <li><b>p.medium {
+	            font-size: medium;
+	            }</b></li>
+	    <li>
+	        p.large {
+	        font-size: large;
+	        }</li>
+	    <li><b>
+	            p.xlarge {
+	            font-size: x-large;
+	            }</b></li>
+		<li>useful if you do not want the user to be able to increase the size of the font</li>
+		<li>font size can be defined in px, em (relative size unit), and if you haven't set the font size anywhere on the page, then it is the browser default size, which is 16px</li>
+		<li>em size caluculation formula em = pixels/16</li>
+	</ul>
+
+	<p><b>Font-style property</b></p>
+	<ul>
+		<li>font-style property is typically used to specify italic text</li>
+		<li><b>Example: </b>p.italic {font-style: italic;}</li>
+	</ul>
+
+	<ul>
+		<li>.normal {font-style: normal;}</li>
+		<li style="list-style: none"><span style="font-style: normal;">This text is normal.</span></li><br>
+		
+		<li>.italic {font-style: italic;}</li>		
+		<li style="list-style: none"><span style="font-style: italic;">This text is italic.</span></li><br>
+		
+		<li>.oblique {font-style: oblique;}</li>
+		<li style="list-style: none"><span style="font-style: oblique;">This text is oblique.</span></li>		
+	</ul>
+
+	<ul>
+		<li>light {font-weight: lighter;}</li>
+		<li style="list-style: none"><span style="font-weight: lighter;">This is a font with a "lighter" weight</span></li><br>
+
+		<li>bold {font-weight: bold;}</li>
+		<li style="list-style: none"><span style="font-weight: bold;">This is a font with a "bold" weight</span></li><br>
+
+		<li>bolder {font-weight: bolder;}</li>
+		<li style="list-style: none"><span style="font-weight: bolder;">This is a font with a "bolder" weight</span></li>
+	</ul>
+
+	<p><b>The font-weight Property</b></p>
+	<p>You can also define the font weight with a number from 100 (thin) to 900 (thick), according to how thick you want the text to be. 400 is the same as normal, and 700 is the same as bold.</p>
+
+	<p><b>The font-variant Property </b></p>
+	<p>The CSS font-variant property allows you to convert your font to all small caps. The values can be set as normal, small-caps, and inherit.</p>
+
+	<ul>
+		<li>.normal {font-variant: normal;}</li>
+		<li style="list-style: none"><span style="font-variant: normal;">Font variant set to normal.</span></li><br>
+
+		<li>.small {font-variant: small-caps;}</li>
+		<li style="list-style: none"><span style="font-variant:small-caps;">Font variant set to small-caps</span></li><br>
+		<li >Note: Not every font supports CSS font-variant, so be sure to test before you publish.</li>
+	</ul>
+
+	<p><b>The color Property</b></p>
+	<p>The CSS color property specifies the color of the text.
+	One method of specifying the color of the text is using a color name: like <span style="color: red">red</span>, <span style="color: green;">green</span>, <span style="color: blue;">blue</span>, etc. Here's an example of changing the color of your font</p>
+
+	<p><b>The text-align Property</b></p>
+	<p>The text-align property specifies the horizontal alignment of text in an element. By default, text on your website is aligned to the left. However, at times you may require a different alignment.</p>
+
+	<p style="text-align: left">I'm on left</p>
+	<p style="text-align: center;">I'm on center</p>
+	<p style="text-align: right;">I'm on right</p>
+
+	<p><b>The vertical-align Property</b></p>
+	<table border="1" cellpadding="2" cellspacing="0" style="height: 150px;">
+	    <tr>
+	        <td class="top">Top</td>
+	        <td class="middle">Middle</td>
+	        <td class="bottom">Bottom</td>
+	    </tr>
+	</table>
+	<style type="text/css">
+		td.top {
+		   vertical-align: top;
+		}
+		td.middle {
+		   vertical-align: middle;
+		}
+		td.bottom {
+		   vertical-align: bottom;
+		}
+	</style>
+
+	<p>display: inline-table; and display: table-cell; styling rules are applied to make the vertical-align property work with divs.</p>
+
+	<p><b>The text-decoration Property</b></p>
+	<p>The text-decoration property specifies how the text will be decorated.
+
+	Commonly used values are:
+	none - The default value, this defines a normal text
+	inherit - Inherits this property from its parent element
+	overline - Draws a horizontal line above the text
+	underline - Draws a horizontal line below the text
+	line-through - draws a horizontal line through the text (substitutes the HTML <s> tag)</p>
+
+	<p class="none">This is default style of the text (none).</p>
+	<p class="inherit">This text inherits the decoration of the parent.</p>
+	<p class="overline">This is overlined text.</p>
+	<p class="underline">This is underlined text.</p>
+	<p class="line-through">This is lined-through text.</p>
+
+	<style type="text/css">
+		p.none {
+		   text-decoration: none;
+		}
+		p.inherit {
+		   text-decoration: inherit;
+		}
+		p.overline {
+		   text-decoration: overline;
+		}
+		p.underline {
+		   text-decoration: underline;
+		}
+		p.line-through {
+		   text-decoration: line-through;
+		}
+	</style>
+
+	
+
+		
 </body>
 </html>
