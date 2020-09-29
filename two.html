@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Two</title>
+	<!-- CSS Box Model -->
+	<!-- Border and its properties -->
+</head>
+<body>
+	<h3>The CSS Box Model</h3>
+	<p>All HTML elements can be considered as boxes. The CSS box model represents the design and layout of the site. It consists of margins, borders, paddings, and the actual content.<br>
+	The properties work in the same order: top, right, bottom, and left. </p>
+	More on Box Models
+
+	<p><b>Every element of the webpage is a box.</b></p>
+
+	<p>CSS uses the box model to determine how big the boxes are and how to place them.</p>
+
+	<p>The total width of the box with paddings will be the sum of width plus padding left and padding right.</p>
+
+	<p>To summarize, Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</p>
+
+	<p>Enter the total width of an element in pixels, if its width=150px, left and right paddings=5px each, border width=2px and left and right margins=5px each.</p>
+	<p><b>174px :</b> 150px(width)+ 5px + 5px (left and right padding) + 5px + 5px (left and right margin) + 2px + 2px (border width)</p>
+
+
+	<h3 style="border: 3px solid black; padding: 10px">The border property</h3>
+
+	<h3>Border attributes</h3>
+
+	<table border="2" style="text-align: center;">
+		<tr>
+			<td>border-width</td>
+			<td>border-style</td>
+			<td>border-color</td>
+		</tr>
+		<tr>
+			<td>in pixels</td>
+			<td>solid, dashed, dotted etc</td>
+			<td>color, hex code, rgb</td>
+		</tr>
+	</table>
+
+	<h3>The border-style Property</h3>
+	<p><b>Example :</b></p>
+
+	<p style="border-style: none">This paragraph has no border.</p>
+	<p style="border-style: dotted">This is a dotted border.</p>
+	<p style="border-style: dashed">This is a dashed border.</p>
+	<p style="border-style: double">This is a double border.</p>
+	<p style="border-style: groove">This is a grooved border.</p>
+	<p style="border-style: ridge">This is a ridged border.</p>
+	<p style="border-style: inset">This is an inset border.</p>
+	<p style="border-style: outset">This is an outset border.</p>
+	<p style="border-style: hidden">This is a hidden border.</p>
+
+	<p><b>Tip: </b>In CSS, it is possible to specify different borders for different sides, using the following properties: border-top-style, border-right-style, border-bottom-style, and border-left-style for the corresponding sides.</p>
+
+	<h3>Border with width and height</h3>
+	<p><b>Example :</b></p>
+
+	<div style="border: 5px solid green;width: 90px;height: 90px;">The total width and height of this element is 100px.</div>
+	<br>
+
+	<div style="border: 5px solid green; width: 90%; height: 90px;">The total width of this element is <strong>90%</strong> and the total height is <strong>100px</strong> .</div>
+
+	<h3>The Minimum and Maximum Sizes</h3>
+	<p>To set the minimum and maximum height and width of an element, you can use the following properties:
+	<ul>	
+		<li>min-width - the minimum width of an element</li>
+		<li>max-width - the maximum width of an element</li>
+		<li>max-height - the maximum height of an element</li>
+	</ul>		
+	</p>
+
+	<p><b>Example :</b></p>
+
+	<p style="border: 5px solid green; min-height: 100px;">The <strong>minimum height </strong> of this paragraph is set to 100px.</p>
+
+	<p style="border: 5px solid green; max-width: 100px;">The<strong> maximum width </strong> of this paragraph is set to 100px.</p>
+
+	
+</body>
+</html>
