@@ -138,7 +138,7 @@
 	inherit - Inherits this property from its parent element
 	overline - Draws a horizontal line above the text
 	underline - Draws a horizontal line below the text
-	line-through - draws a horizontal line through the text (substitutes the HTML <s> tag)</p>
+	line-through - draws a horizontal line through the text (substitutes the HTML tag)</p>
 
 	<p class="none">This is default style of the text (none).</p>
 	<p class="inherit">This text inherits the decoration of the parent.</p>
@@ -164,8 +164,77 @@
 		}
 	</style>
 
+	<p><b>The text-indent Property</b></p>
+	<p style="text-indent: 60px;">The text-indent property specifies how much horizontal space should be left before the beginning of the first line of the text. Property values are length (px, pt, cm, em, etc.), %, and inherit.</p>
+	<p ><b>Note: </b>Negative values are allowed. The first line will be indented to the left if the value is negative.</p>
 	
+	<p><b>The text-shadow Property</b></p>
+	<p>The text-shadow property adds shadow to text.
+	It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, and the fourth value sets the color.</p>
+	<p>In the example above, we created a shadow using the following parameters:</p>
+	<ul>
+		<li>5px – the X-coordinate(horizontal)</li>
+		<li><b>2px – the Y-coordinate(vertical)</b></li>
+		<li>4px – the blur radius</li>
+		<li><b>grey – the color of the shadow</b></li>
+	</ul>
+	<h2 style="color: blue; font-size: 20pt; text-shadow: 5px 2px 4px red">Text Shadow</h2>
 
-		
+	<p><b>Text Shadow with blur effect</b></p>
+	<h1 style="font-size: 20pt; text-shadow: rgba(0,0,255,1) -1px -2px 0.5em; ">Text-shadow with blur effect</h1>
+
+	<p><b>The text-transform Property</b></p>
+	<p style="text-transform: capitalize;">The text-transform CSS property specifies how to capitalize an element's text. For example, it can be used to make text appear with each word capitalized.</p>
+	
+	<p style="text-transform: uppercase;">This value transforms all characters to uppercase.</p>
+
+	<p style="text-transform: lowercase;">This value transforms all characters to lowercase.</p>
+
+	<p><b>Note: </b>The value none will produce no capitalization effect at all.</p>
+
+	<p><b>The letter-spacing Property</b></p>
+	<p>The letter-spacing property specifies the space between characters in a text. The values can be set as:
+	<ul>	
+		<li>normal defines the default style with no extra space between characters</li>
+		<li>length defines an extra space between characters using measurement units like px, pt, cm, mm, etc.;</li>
+		<li>inherit inherits the property from its parent element;</li>
+	</ul>
+	</p>
+	<p style="letter-spacing: normal;">This paragraph has no additional letter-spacing applied.</p>
+
+	<p style="letter-spacing: 4px">This paragraph is letter-spaced at 4px.</p></p>
+
+	<p style="letter-spacing: -1px">This paragraph is letter-spaced at -1px.</p></p>	
+
+	<br>
+	<p><b>The word-spacing Property</b></p>
+	<p>The word-spacing property specifies the space between words in a text. Just like the letter-spacing property, you can set the word-spacing values as normal, length, and inherit. </p>
+
+	<p style="word-spacing: normal;">This paragraph has no additional word-spacing applied.</p>
+
+	<p style="word-spacing: 30px">This paragraph is word-spaced at 30px.</p>
+
+	<p style="word-spacing: -5px">This paragraph is word-spaced at -5px.</p>
+
+	<br>
+	<p><b>The white-space Property</b></p>
+	<p>The white-space property specifies how white-space inside an element is handled. The values can be set as normal, inherit, nowrap, etc.
+	The nowrap value makes the text continue on the same line until a &ltbr&gt tag is encountered, and also collapses all sequences of whitespace into a single whitespace.</p>
+
+	<p style="white-space: nowrap;">This paragraph has         multiple spaces      and
+	a line break, but it will be ignored, as we used the nowrap value.</p>
+	<p><b>Note: </b>The text will continue on the same line until a &ltbr /&gt tag is encountered. </p>
+
+	<p><b>What is the difference between the "pre" and "pre-line" options?</b></p>
+	<p>"pre" accepts all line-breaks and whitespace, while "pre-line" ignores the whitespace</p>
+
+
+	<p><b>Summary Question:</b></p>
+	<ul>
+		<li>What is the correct CSS syntax for making all p elements bold?</li>
+		<li>p {font-weight:bold;}</li>
+
+
+	</ul>
 </body>
 </html>
