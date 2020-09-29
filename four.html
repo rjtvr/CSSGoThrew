@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Four | styling the list</title>
+
+</head>
+<body>
+	<h3>The list-style-type Property</h3>
+	<p>The CSS list properties allow us to set different list item markers. In HTML, there are two types of lists:<br>
+	<b>unordered lists</b> (&ltul&gt) - the list items are marked with bullets<br>
+	<b>ordered lists</b> (&ltol&gt) - the list items are marked with numbers or letters<br><br>
+	With CSS, lists can be styled further, and images can be used as the list item marker.<br>	
+	One of the ways is to use the list-style-type property, which can be set to circle, square, decimal, disc, lower-alpha, etc.</p>
+
+	<ol style="list-style-type: lower-alpha;">
+	    <li>Red</li>
+	    <li>Green</li>
+	    <li>Blue</li>
+	</ol>
+	<ul style="list-style-type: circle;">
+	    <li>Red</li>
+	    <li>Green</li>
+	    <li>Blue</li>
+	</ul>
+	<ul style="list-style-type: square;">
+	    <li>Red</li>
+	    <li>Green</li>
+	    <li>Blue</li>
+	</ul>
+
+	<p>The following list has list-style-position: <strong>inside</strong>.</p>
+	<ul style="list-style-image: url('logo.jpg');list-style-position: inside;">
+	   <li>Red</li>
+	   <li>Green</li>
+	   <li>Blue</li>
+	</ul>
+	<p><b>Note: </b>"list-style-position: outside" is the default value.</p>
+
+	<h3>The list-style Property</h3>
+	<p>The list-style property is a shorthand property for setting list-style-type, list-style-image and list-style-position. It is used to set all of the list properties in one declaration:</p>
+
+	<p>The following list has list-style-position: <strong>outside</strong>.</p>
+	<ul style="list-style-type: square; list-style-position: outside; list-style-image: none;">
+	   <li>Red</li>
+	   <li>Green</li>
+	   <li>Blue</li>
+	</ul>
+
+	<p><b>Note: </b>If one of the property values are missing, the default value for the missing property will be inserted, if any.</p>
+
+
+</body>
+</html>
