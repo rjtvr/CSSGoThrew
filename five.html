@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Five | Table properties and A tag</title>
+</head>
+
+<body>
+    <h3>The Table Properties</h3>
+    <p>The look of an HTML table can be greatly improved with CSS.<br>
+        The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. If the borders are separate, the border-spacing property can be used to change the spacing. </p>
+    <table border="1" style="border-collapse: separate;border-spacing: 20px 40px;">
+        <tr>
+            <td>Red</td>
+            <td>Green</td>
+        </tr>
+        <tr>
+            <td>Blue</td>
+            <td>Yellow</td>
+        </tr>
+    </table>
+
+    <br><br>
+    <table border="1">
+        <caption style="caption-side: top;">Some of Our Courses</caption>
+        <tr>
+            <th>Course name</th>
+            <th>Lessons</th>
+            <th>Quizzes</th>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>81</td>
+            <td>363</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>48</td>
+            <td>144</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>38</td>
+            <td>119</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>70</td>
+            <td>174</td>
+        </tr>
+    </table>
+
+    <h3>The empty-cells Property</h3>
+    <p>The empty-cells property specifies whether or not to display borders and background on empty cells in a table.
+	<ul>
+		Possible values are:
+		<li>show: the borders of an empty cell are rendered</li>
+		<li>hide: the borders of an empty cell are not drawn</li>
+	</ul>
+	</p>
+
+	<table border="1" style="border-collapse: separate; empty-cells: hide;">
+	    <tr>
+	        <td>HTML</td>
+	        <td>CSS</td>
+	    </tr>
+	    <tr>
+	        <td>JavaScript</td>
+	        <td></td>
+	    </tr>
+	</table>
+
+	<h3>The table-layout Property</h3>
+	<p>The table-layout specifies how the width of table columns is calculated. The possible values are:
+	<ul>
+		<li>auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column</li>
+
+		<li>fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.</li>
+	</ul></p>
+
+	<p>Table-layout is set to <strong>auto</strong></p>
+	<table style="border-collapse: separate;width: 100%; border: 1px solid gray; table-layout: auto;">
+	    <tr>
+	        <td style="border: 1px solid gray;" width="10%">500.000.000.000.000</td>
+	        <td style="border: 1px solid gray;" width="90%">20.000</td>
+	    </tr>
+	</table>
+
+	<p>Table-layout is set to <strong>fixed</strong></p>
+	<table style="border-collapse: separate;width: 100%; border: 1px solid gray; table-layout: fixed;">
+	    <tr>
+	        <td style="border: 1px solid gray;" width="10%">500.000.000.000.000</td>
+	        <td style="border: 1px solid gray;" width="90%">20.000</td>
+	    </tr>
+	</table>
+
+	<h3>Setting Styles to Links</h3>
+	<p>Links can be styled with any CSS property (e.g., color, font-family, background, etc.).<br>
+	In addition, links can be styled differently, depending on what state they are in. The following pseudo selectors are available:
+		<ul>
+			<li>a:link - defines the style for normal unvisited links</li>
+			<li>a:visited - defines the style for visited links</li>
+			<li>a:active - a link becomes active once you click on it</li>
+			<li>a:hover - a link is hovered when the mouse is over it</li>
+		</ul>
+	</p>
+
+	<p><u>CSS:</u>
+		<a id="refOne" href="http://www.sololearn.com" target="_blank">
+    		This link is hovered when we mouse over it
+		</a>
+		<style type="text/css">
+			#refOne:hover {
+   				color: red;
+			}
+		</style>
+	</p>
+
+	<ul>When setting the style for several link states, there are some order rules:
+		<li>a:hover MUST come after a:link and a:visited</li>
+		<li>a:active MUST come after a:hover</li>
+	</ul>
+
+	<p><u>CSS:</u> 
+		<a id="refTwo" href="http://www.sololearn.com" target="_blank">
+   			This link has no underline.
+		</a>
+		<style type="text/css">
+			#refTwo:link{
+				text-decoration: none;
+			}
+		</style>
+	</p>	
+
+	<p><b>Note: </b>The following properties are used to control the look and feel of links:<br>
+	border:none - removes border from images with links<br>
+	outline:none - removes the dotted border on clicked lines in IE</p>
+
+
+
+</body>
+</html>
