@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Three | background</title>
+	<!-- background and its attributes -->
+
+</head>
+<body>
+	<h3>The background-color Property</h3>
+	<p>The background-color property is used to specify the background color of an element. </p>
+
+	<p><b>Example: </b></p>
+	<p><u>CSS:</u><br>
+		body {
+    		background-color: #87CEFA;
+		}
+	</p>
+
+	<h3>The background-image Property</h3>
+	<p>The background-image property sets one or several background images in an element. Let's set a background-image for the &ltbody&gt element.</p>
+
+	<p><u>CSS:</u><br>
+	body {
+		background-image: url("css_logo.png"); // if the image is in same locaiton of index.html file
+		background-color: #e9e9e9;
+	}</p>
+
+	<p><b>Note: </b>By default, a background-image is placed at the top-left corner of an element, and is repeated both vertically and horizontally to cover the entire element.</p>
+
+	<h3>The background-image Property</h3>
+	<p>Background-image can be set not only for the whole page, but for individual elements, as well.
+	Below we set a background image for the &ltp&gt element. </p>
+
+	<p><u>CSS:</u><br>
+	p {
+		padding: 30px;
+		background-image: url("green_photo.jpg");
+		color: white;   
+	}
+	</p>
+
+	<p><b>Note: </b>To specify more than one image, just separate the URLs with commas.</p>
+
+	<h3>The background-repeat Property</h3>
+	<p>The background repeat property specifies how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
+	<br><br>
+	The repeat-x will repeat a background image only horizontally.
+	</p>
+
+	<p><u>CSS:</u><br>
+	body {
+	   background-image: url("css_logo.png");
+	   background-repeat:<b> repeat-y</b>;
+	}		
+	</p>
+	
+	<p>The repeat-y will repeat a background-image only vertically.</p>
+
+	<p><u>CSS:</u><br>
+	body {
+	   background-image: url("css_logo.png");
+	   background-repeat:<b> repeat-y</b>;
+	}</p>	
+
+	<p><b>Note: </b>If you want the image to be shown only once, use the no-repeat value. </p>
+
+	<h3>Setting the Value to Inherit</h3>
+	<p>When you set the background-repeat property to inherit, it will take the same specified value as the property for the element's parent.
+	<br>
+	For example, we set the body background repeat only horizontally. If we set some paragraph background-repeat values to be inherited, they will take the same property value as the body element.
+	</p>
+
+	<h3>The background-attachment Property</h3>
+	<p>The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.<br>
+	Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element.</p>
+
+	<p><u>CSS: </u><br>
+	body {<br>
+	   	background-image: url("css_logo.png");<br>
+	   	background-repeat: no-repeat;<br>
+	   	background-attachment: fixed;<br>
+	}</p>
+
+	
+</body>
+</html>
