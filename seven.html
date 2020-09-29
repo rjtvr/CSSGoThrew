@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Seven | Position</title>
+
+</head>
+<body>
+	<h3>Positioning Elements</h3>
+	<p>The CSS positioning properties allow you to position an element. It can also place an element behind another, and specify what should happen when an element's content is too big.<br>
+
+	Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the positioning method.</p>
+
+
+	<h3>Static Positioning</h3>
+	<p>HTML elements are positioned static by default. A static positioned element is always positioned according to the normal flow of the page.</p>
+
+	<p><b>Example: </b></p>
+
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p style="position:static;top: 30px;right: 5px;color: red;">This paragraph has a static position.</p>
+
+	<p><b>Note: </b>Static positioned elements are not affected by the top, bottom, left, and right properties.</p>
+
+
+	<h3>Fixed Positioning</h3>
+	<p>An element with a fixed position is positioned relative to the browser window, and will not move even if the window is scrolled.<br>The position can be specified using one or more of the properties top, right, bottom, and left.<br>In the example below, the paragraph is fixed to 30px from the top and 5px from the right.</p>
+
+	<p><b>Example: </b></p>
+	
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p>Paragraph with no position.</p>
+	<p style="position: fixed;top: 80%;right: 5px;color: red;">Fixed position.</p>
+
+	<p><b>Note: </b>Fixed positioned elements are removed from the normal flow. The document and other elements behave like the fixed positioned element does not exist. Fixed positioned elements can overlap other elements.</p>
+
+	<h3>Relative Positioning</h3>
+	<p>A relative positioned element is positioned relative to its normal position.<br>The properties top, right, bottom, and left can be used to specify how the rendered box will be shifted.</p>
+
+	<p><b>Example: </b></p>
+
+	<p style="width: 350px;border: 1px black solid;position: fixed;">This is some paragraph with <span class="spanOnex">span </span> inside it. This is some paragraph with <span class="spanOnex">span </span> inside it. This is some paragraph with <span class="spanOnex">span </span> inside it</p>
+
+	<style type="text/css">
+		.spanOnex{
+		    background: green;
+		    color: white;
+		    position: relative;
+		    top: 150px;
+		    left: 50px;
+		}
+	</style>
+
+	<h3>Absolute Positioning</h3>
+	<p>An absolute position element is positioned relative to the first parent element that has a position other than static. If no such element is found, the containing block is &lthtml&gt.<br>
+	Absolutely positioned elements are removed from the normal flow. The document and other elements behave like the absolutely positioned element does not exist.</p>
+
+
+
+</body>
+</html>
