@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nine | CSS3 Intro</title>
+</head>
+<body>
+	<h1>CSS3</h1>
+	<p>CSS3 is the latest standard for CSS.<br>
+	CSS3 is completely backwards-compatible with earlier CSS versions.
+		<ul>
+			<u>Some of the most significant new features are</u>:
+			<li><b>Border radius</b> - allows us to create rounded corners for elements.</li>
+			<li><b>Border images</b> - allows us to specify an image as the border around an element.</li>
+			<li><b>Multiple backgrounds</b> - applies multiple backgrounds to elements.</li>
+			<li><b>Animations and effects</b>, and much more!</li> 
+		</ul>
+	</p>
+	<style type="text/css">
+		.li-rm{list-style: none;}
+	</style>
+	<h3>CSS3: New Features</h3>
+	<ul>
+		<li>To make web development easier and faster, CSS3 introduces additional new features, including the following:</li>
+
+		<li><b>Box Shadow</b></li>
+		<li class="li-rm">With the box-shadow property, you can attach one or more shadows to an element by specifying values for color, size, blur, and offset.</li>
+
+		<li><b>Gradients</b></li>
+		<li class="li-rm">CSS3 gradients allow us to set the background color of the element to a gradient. Two types of gradients are available: Linear and Radial.</li>
+
+		<li>Transforms allow you to rotate, scale, move, and skew elements.</li>
+
+		<li>Another popular feature is Transitions which allows you to animate from one CSS property value to another. You can combine it with transforms and animate the element's position, rotation, or scale.</li>
+
+		<li>The property attracting the most attention is Animations.</li>
+		
+		<li>CSS Animations have their own specifications, and they allow you to create keyframes, set duration, easing, and more.</li>
+	</ul>
+
+	<h3>CSS Vendor Prefixes</h3>
+	<p>CSS vendor prefixes or CSS browser prefixes are a way for browser makers to add support for new CSS features during periods of testing and experimentation. Browser prefixes are used to add new features that may not be part of the final and formal CSS specification.<br>
+	For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.<br>
+	To specify the border-radius in Chrome and Safari, the following syntax is used:</p>
+
+	<p><b>Example: </b></p>
+	<ul>
+		<li>-webkit-border-radius: px, em, %;</li>
+		<li>border-radius: px, em, %;</li>
+	</ul>
+
+	<table border="2">
+		<caption>Browser Prefixes</caption>
+		<tr>
+			<th>Browser</th>
+			<th>Vendor Prefix</th>
+		</tr>
+		<tr>
+			<td>FireFox</td>
+			<td>-moz-</td>
+		</tr>
+		<tr>
+			<td>Safari</td>
+			<td>-webkit-</td>
+		</tr>
+		<tr>
+			<td>Chrome</td>
+			<td>-webkit-</td>
+		</tr>
+		<tr>
+			<td>Opera</td>
+			<td>-o-</td>
+		</tr>
+		<tr>
+			<td>IE</td>
+			<td>-ms</td>
+		</tr>
+	</table>
+
+	<div style="border-radius: 0 0 20px 20px; padding: 50px; color: white; background-color: green; text-align: center;">
+		Only Bottom Corner
+	</div>
+
+	<ul>Border Radius
+		<li>top-left</li>
+		<li>top-right</li>
+		<li>bottom-right</li>
+		<li>bottom-left</li>
+	</ul>
+	<p>to make a circle, the border radius and the width equal to half of the height and the width</p>
+
+	<h3>The box-shadow Property</h3>
+	<p>The CSS3 box-shadow property applies shadow to elements.
+	Components of the box-shadow property are decoded by browsers in the following manner:
+	<ul>
+		<li>The first length for the horizontal offset will cast the shadow to the right of the box (required)</li>
+		<li>The second length is for the vertical offset that will cast the shadow to below the box (required)</li>
+		<li>The color of the shadow (optional)</li>
+	</ul>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: 10px 10px #888888;">
+		
+	</div>
+
+	<h3>Blur and Spread</h3>
+	<p>Besides color, there are also two optional values for the box-shadow element, which are blur and spread. </p>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: 10px 10px 5px 5px #888888;">
+		
+	</div>
+
+	<h3>Negative Values</h3>
+	<p>Negative values can also be used for the box-shadow property.
+		<ul>
+			<li><b>horizontal offset</b> - the shadow will be to the left of the box</li>
+			<li><b>vertical offset</b> - the shadow will be above the box</li>
+			<li><b>blur radius</b> - negative values are not allowed</li>
+			<li><b>spread radius</b> - negative values will cause the shadow to shrink</li>
+		</ul>	
+	</p>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: -10px -10px 5px -5px #888888;">
+		
+	</div>
+
+
+	<h3>Creating an Inner Shadow</h3>
+	<p>The "inset" keyword allows to draw an inner shadow in the box. To show an inset shadow, just add the inset keyword:</p>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: inset 10px 10px 5px #888888;">
+		
+	</div>
+
+</body>
+</html>
