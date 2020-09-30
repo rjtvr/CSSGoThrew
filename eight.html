@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eight | floating</title>
+</head>
+<body>
+	<h3>Floating</h3>
+	<p>With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.<br>
+	Float is often used with images, but it is also useful when working with layouts.<br>
+	The values for the float property are left, right, and none.
+	Left and right float elements in those directions, respectively. none (the default) ensures that the element will not float. </p>
+
+	<p><b>Example: </b></p>
+
+	<p><img src="assets/image.png" style="float: right;" />
+	    This paragraph has an image that is floated to the <strong>right.</strong>
+	    It is highly recommended to add a margin to images so that the text does
+	    not get too close to the image. If you want your text to be easily read, you
+	    should always add a few pixels between words and borders, images,
+	    and other content.
+	</p>
+	<br><br><br>
+
+	<h3>Elements Next to Each Other</h3>
+	<p>If you place several floating elements one after the other, they will float next to each other if there is enough room.<br>
+	As an example, in a print layout, images may be set into the page such that text wraps around them as needed. </p>
+
+
+	<h3>Clearing the Float</h3>
+	<p>Elements that come after the floating element will flow around it. To avoid this, use the clear property.<br>
+	The clear property specifies the sides of an element where other floating elements are not allowed to be.<br>
+	In the example below, if we set the float property to the div, only the paragraph that comes after the div will be wrapped around the image.</p>
+
+
+	<p><b>Example: </b></p>
+
+	This paragraph is above the div element
+	and is not affected by the float right property.
+	<br /><br />
+	<div class="floating" style="float: right">
+	    <img src="assets/image.png" />
+	</div>
+	This paragraph comes after the div element
+	and is affected by the float right property.
+	<br /><br />
+	This paragraph also comes after the div element
+	and is affected by the float right property.
+	<br /> <br />
+
+
+	<p><b>If there is an element with a float property, which neighbor elements will be affected?</b></p>
+	<u>The ones coming after that element</u>
+
+	<h3>Using clear</h3>
+	<p>Use the values right, left, and both to specify the sides of an element where other floating elements are not allowed to be.
+	</p>
+	<p><b>Note: </b>The default value is none, which allows floating elements on both sides.</p>
+
+	<div>
+		This paragraph is above the div element
+		and is not affected by the float right property.
+		<br /><br />
+		<div style="float: right;">
+		    <img src="assets/image.png" />
+		</div>
+		This paragraph comes after the div element
+		and is affected by the float right property.
+		<br /><br style="clear: both;" />
+		This paragraph is out of the floating group
+		and is not affected by the float right property.
+		<br /> <br />
+	</div>
+
+	<h3>The overflow Property</h3>
+	<p>As discussed earlier, every element on the page is a box. If the height of the box is not set, the height of that box will grow as large as necessary to accommodate the content.</p>
+
+	<p><b>Example: </b></p>
+
+	<div style="width: 150px;height: 150px;background-color: lightblue;float: left; text-align: justify;padding: 10px">
+		This text is inside the div element, which has a blue 
+		background color and is floated to the left. We set a specific 
+		height and width for the div element, and as you can see, 
+		the content cannot fit. and this paragraph is justified
+	</div>
+	<div style="clear: both;"></div>
+	<br><br><br><br>
+	<p><b>Note: </b>The CSS overflow property specifies the behavior that occurs when an element's content overflows the element's box.</p>
+
+
+	<h3>The overflow Property Values</h3>
+	<p>There are four values for the overflow property: visible (the default value), scroll, hidden, and auto.<br>
+	The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content may be seen.</p>
+
+	<p><b>Example: </b></p>
+
+	<div style="width: 150px;height: 150px;background-color: lightblue;float: left;overflow: scroll; text-align: justify;">
+		This text is inside the div element, which has a blue 
+		background color and is floated to the left. We set a specific 
+		height and width for the div element, and as you can see, 
+		the content cannot fit. 
+	</div>
+
+	<div style="clear: both;"></div>
+	<h3>Auto and Hidden</h3>
+	<p><b>auto</b> - If overflow is clipped, a scroll-bar should be added to make it possible to see the rest of the content.<br>
+	<b>hidden</b> - The overflow is clipped, and the rest of the content will be invisible.</p>
+
+
+	<div style="width: 150px;height: 150px;background-color: lightblue;float: left;overflow: hidden;">
+		This text is inside the div element, which has a blue 
+		background color and is floated to the left. We set a specific 
+		height and width for the div element, and as you can see, 
+		the content cannot fit. 
+	</div>
+	<div style="clear: both"></div>
+	<p><b>Note: </b>The default value for the overflow property is visible.</p>
+
+
+	<h1>Z-Index</h1>
+
+	<div style="background-color: #8EC4D0;margin-bottom: 15px;width: 120px;height: 120px;color: #FFF;">Blue</div>
+	
+	<div style="background-color: #FF4D4D;position: relative;width: 120px;height: 120px;color: #FFF;margin-top: -50px;margin-left: 50px;">Red</div>
+
+	<p><b>Note: </b>The red box overlaps the blue box, because it was placed later in the HTML markup.The z-index property can change this order.</p>
+
+
+	<div style="z-index: 3;position: relative;background-color: #8EC4D0;margin-bottom: 15px;width: 120px;height: 120px;color: #FFF;">Blue</div>
+	<div style="z-index: 2;position: relative;background-color: #FF4D4D;width: 120px;height: 120px;color: #FFF;margin-top: -50px;margin-left: 50px;">Red</div>
+
+	<p><b>Note: </b>The z-index works only on positioned elements (position:absolute, position:relative, or position:fixed).</p>
+
+
+
+
+</body>
+</html>
