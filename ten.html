@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ten | Pseudo Classes and Elements</title>
+
+</head>
+<body>
+	<h3>Working with Pseudo-Classes</h3>
+	<p>The CSS pseudo-classes allow us to style elements, or parts of elements, that exist in the document tree without using JavaScript or any other scripts. A pseudo-class starts with a ":" (colon).<br>
+	The most commonly used pseudo-classes are <b>:first-child</b> and <b>:last-child</b>.<br>
+	The <b>:first-child</b> pseudo-class matches an element that is the first child element of some other element.<br>
+	In the following example, the selector matches any <p> element that is the first child of the div element:</p>
+
+	<p><b>Example: </b></p>
+
+	<div id="parent">
+		<p>First paragraph</p>
+		<p>Second paragraph</p>
+		<p>Third paragraph</p>
+		<p>Fourth paragraph</p>
+	</div>
+	<style type="text/css">
+		#parent p:first-child{
+			color: green;
+			text-decoration: underline;
+		}
+		#parent p:last-child{
+			color: red;
+			text-decoration: underline;
+		}
+	</style>
+
+	<h3>Working with Pseudo Elements</h3>
+	<p>Psuedo elements are used to select specific parts of an elements.<br>
+	There are five psuedo elements in CSS, each starting with a dounle colon</p>
+
+	<ul>
+		<li><b>::first-line</b> - the first line of the text in a selector</li>
+		<li><b>::first-letter</b> - the first letter of the text in a selector</li>
+		<li><b>::selection</b> - selects the portion of an element that is selected by a user</li>
+		<li><b>::before</b> - inserts the content before an element</li>
+		<li><b>::after</b> - inserts the content after an element</li>
+	</ul>
+
+
+	<p><b>Example: </b></p>
+
+	<div id="test1" style="width: 600px">
+		<p>The following example demonstrates how to use the ::first-line element to add special effect to the first line of elements in the document.</p>
+	</div>
+	<div id="test2" >
+		<p> You can insert text, images, and other resources using <strong>:before </strong>pseudo element. </p>
+		<p> You can insert text, images, and other resources using <strong>:before </strong>pseudo element. </p>
+		<p> You can insert text, images, and other resources using <strong>:before </strong>pseudo element. </p>
+	</div>
+
+	<style type="text/css">
+		#test1 p::first-line{
+			color: green
+		}
+/*		#test1 p::-moz-selection {
+    		background: #8bc34a;
+    		color: #fff;
+		}*/
+		#test1 p::selection {
+		    background: #8bc34a;
+		    color: #fff;
+		}
+		#test2 p::before{
+			content: url("http://www.sololearn.com/images/bullet.jpg");
+		}
+		#test2 p::after{
+			content: url("http://www.sololearn.com/images/bullet.jpg");
+		}
+
+	</style>
+
+	<h3>The word-wrap Property</h3>
+	<p>The word-wrap property allows long words to be broken and wrapped into the next line. It takes two values: normal and break-word.<br>
+	In the example below, the word-wrap property is set to normal.</p>
+
+	<p style="width: 210px;height: 100px;border: 1px solid #000000;word-wrap: normal;">This paragraph has a long word: thisisaverylongwordbutyoucantfinditinthedictionary.</p>
+
+	<p style="width: 210px;height: 100px;border: 1px solid #000000;word-wrap: break-word;">This paragraph has a long word: thisisaverylongwordbutyoucantfinditinthedictionary.</p>
+
+	
+
+
+
+
+</body>
+</html>
