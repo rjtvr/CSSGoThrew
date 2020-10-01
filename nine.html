@@ -134,5 +134,33 @@
 		
 	</div>
 
+	<h3>Layering Multiple Shadows</h3>
+	<p>You can define as many shadows for the same box as you want by writing all of them comma-separated in the same rule.<br>
+	In the example below, two inner shadows have been created by separating each shadow with a comma. </p>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: inset 10px 10px 5px #888888, inset -10px -10px 5px #888888;">
+		
+	</div>
+
+	<p>In case we specify more than one value, the one which comes last will be positioned at the back of all shadows.</p>
+
+	<p><b>Example: </b></p>
+	<div style="width: 300px;height: 100px;background-color: #9ACD32;box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;margin-left:30px;margin-top:30px;">
+		
+	</div>
+
+	<h3>The text-shadow Property</h3>
+	<p>The text-shadow property defines one or more comma-separated shadow effects, to be applied to the text content of the current element.<br>
+	The image below shows how the text-shadow property is applied: </p>
+
+	<img src="https://api.sololearn.com/DownloadFile?id=2676">
+
+	<p><b>Note: </b><br>
+	- The offset-x and offset-y values are required for the CSS text-shadow property.<br>
+	- The color value is not required, but since the default for the text-shadow is transparent, the text-shadow will not appear unless you specify a color value.</p>
+
+	<h3 style="text-shadow: 5px 10px 2px #93968f, -3px 6px 5px #58d1e3;">Multiple text shadows</h3>
+
 </body>
 </html>
